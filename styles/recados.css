@@ -1,0 +1,107 @@
+/* mogneto recados styles */
+
+.main-feed {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  padding: 12px;
+}
+
+.recados-header {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.recados-header h2 {
+  color: var(--accent-gold);
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+/* formulário de recado */
+.recado-form {
+  background-color: #0e0e12;
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 8px;
+}
+
+.retro-input-field {
+  background-color: #08080a;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 5px 8px;
+  font-family: var(--font-retro);
+  font-size: 10px;
+  width: 100%;
+}
+
+.retro-input-field:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+}
+
+textarea.retro-input-field {
+  resize: vertical;
+  min-height: 60px;
+}
+
+/* listagem de recados */
+.recados-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recado-item {
+  background-color: #0e0e12;
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.recado-author {
+  color: var(--accent-gold);
+  font-weight: bold;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recado-date {
+  color: var(--text-muted);
+  font-size: 9px;
+  font-weight: normal;
+}
+
+.recado-text {
+  color: var(--text-main);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.sidebar-right {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.sidebar-right h3 {
+  font-size: 11px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 4px;
+}

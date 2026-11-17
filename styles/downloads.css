@@ -1,0 +1,173 @@
+/* mogneto downloads styles */
+
+.main-feed {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  padding: 12px;
+}
+
+.explore-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--border-color);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.explore-header h2 {
+  color: var(--accent-gold);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.retro-select, .retro-input {
+  background-color: #08080a;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 4px 8px;
+  font-family: var(--font-retro);
+  font-size: 10px;
+}
+
+.retro-select:focus, .retro-input:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+}
+
+/* grade de downloads estilo arquivo */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  gap: 12px;
+}
+
+.catalog-card {
+  background-color: #0e0e12;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.15s;
+}
+
+.catalog-card:hover {
+  border-color: var(--accent-red);
+}
+
+.card-cover {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-color: #040406;
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 11px;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px;
+}
+
+.card-play-overlay {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  background-color: var(--accent-gold);
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 3px 7px;
+  font-size: 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-play-overlay:hover {
+  background-color: var(--accent-red);
+  color: #ffffff;
+}
+
+.card-body {
+  padding: 8px;
+  flex: 1;
+}
+
+.card-title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 11px;
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+
+.card-artist {
+  color: var(--text-muted);
+  font-size: 10px;
+}
+
+/* estatísticas em 4 colunas */
+.card-stats {
+  display: grid;
+  grid-template-columns: 32px 1fr 1fr 1fr;
+  border-top: 1px solid var(--border-color);
+  background-color: #08080a;
+  font-size: 9px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.stat-cell {
+  padding: 5px 2px;
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.stat-cell:last-child {
+  border-right: none;
+}
+
+.stat-icon-disk {
+  color: var(--accent-gold);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sidebar-right {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.sidebar-right h3 {
+  font-size: 11px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 4px;
+}

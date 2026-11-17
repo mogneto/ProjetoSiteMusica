@@ -1,0 +1,52 @@
+/* mogneto index styles */
+
+.main-feed {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  padding: 12px;
+}
+
+.main-feed h2 {
+  color: var(--accent-gold);
+  font-size: 13px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.mini-player-bar {
+  background-color: #0e0e12;
+  border: 1px solid var(--accent-red);
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.now-playing-text {
+  color: var(--accent-gold);
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.sidebar-right {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.sidebar-right h3 {
+  font-size: 11px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 4px;
+}

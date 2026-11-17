@@ -1,0 +1,94 @@
+/* mogneto biografia styles */
+
+.main-feed {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  padding: 12px;
+}
+
+.bio-header {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.bio-header h2 {
+  color: var(--accent-gold);
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+/* caixa unificada da biografia */
+.bio-card {
+  background-color: #0e0e12;
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* foto centralizada no topo da caixa */
+.bio-avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.bio-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2b0c3f, #08050f);
+  border: 2px solid var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  overflow: hidden;
+}
+
+.bio-name {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.bio-role {
+  font-size: 9px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* bloco de texto centralizado dentro da caixa */
+.bio-text-content {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--text-main);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.sidebar-right {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+}
+
+.sidebar-right h3 {
+  font-size: 11px;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 4px;
+}
