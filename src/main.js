@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // 1. Controle global de áudios (Página Index)
+  // Garante que apenas um áudio de sneak-peek toque por vez
   const audioElements = document.querySelectorAll('audio');
   audioElements.forEach(audio => {
     audio.addEventListener('play', () => {
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const enviarBtn = recadoForm.querySelector('.retro-btn');
     const recadosList = document.querySelector('.recados-list');
 
+    // Carregar recados salvos do localStorage
     const recadosSalvos = JSON.parse(localStorage.getItem('mogneto_recados') || '[]');
     recadosSalvos.forEach(recado => {
       adicionarRecadoNaTela(recado.nome, recado.mensagem, recado.data, false);
@@ -99,40 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       setTimeout(() => { itemDiv.style.opacity = '1'; }, 50);
-    }
-  }
-
-  // 3. Filtro em Tempo Real (Página de Vídeos / Catálogo)
-  const searchInput = document.getElementById('search-input');
-  const genreFilter = document.getElementById('genre-filter');
-  const catalogGrid = document.getElementById('catalog-grid');
-
-  if (searchInput && catalogGrid) {
-    const cards = catalogGrid.querySelectorAll('.catalog-card');
-
-    function filtrarCatalogo() {
-      const termo = searchInput.value.toLowerCase();
-      const filtroGenero = genreFilter ? genreFilter.value : 'todos';
-
-      cards.forEach(card => {
-        const titulo = card.querySelector('.card-title').textContent.toLowerCase();
-        const artista = card.querySelector('.card-artist').textContent.toLowerCase();
-        const generoCard = card.getAttribute('data-genre') || 'all';
-
-        const matchTexto = titulo.includes(termo) || artista.includes(termo);
-        const matchGenero = filtroGenero === 'todos' || generoCard === filtroGenero;
-
-        if (matchTexto && matchGenero) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-
-    searchInput.addEventListener('input', filtrarCatalogo);
-    if (genreFilter) {
-      genreFilter.addEventListener('change', filtrarCatalogo);
     }
   }
 
